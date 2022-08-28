@@ -24,7 +24,7 @@ while($controle <= 20)
 
 //For
 echo "for<br>";
-for($i = 0; $i < 10; $i++)
+for($i = 0; $i <= 10; $i++)
 {
     echo "Valor de i é: $i <br>";
 }

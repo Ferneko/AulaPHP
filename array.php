@@ -1,6 +1,7 @@
 <?php
 //           0      1       2         3       4
 $carros = ["BMW", "Gol", "Saveiro", "Uno", "Palio"];
+
 echo "<pre>";
 print_r($carros);
 echo "</pre>";
@@ -12,10 +13,10 @@ echo "\$carros[1]:".$carros[1]."<br>";
 echo "<ul>";
 for($i = 0; $i < count($carros); $i++)
 {
-    echo "<li>".$carros[$i]."</li>";
+    echo "<li>". $carros[$i] ."</li>";
 }
 echo "</ul>";
-/*
+
 
 
 $carros = array();
@@ -26,7 +27,7 @@ echo "</pre>";
 
 
 
-$carros = array("BMW", "Gol", "Saveiro", "Uno");
+$carros = array("BMW", "Gol", 32, "Uno");
 echo "<pre>";
 print_r($carros);
 echo "</pre>";
@@ -56,7 +57,10 @@ echo "</pre>";
 
 
 //Chave e valor
-$pessoa = array("Nome" => "Fernando", "Idade" => 32, "Altura" => 1.77, "Solteiro" => true);
+$pessoa = array("Nome" => "Fernando",
+                 "Idade" => 32,
+                  "Altura" => 1.77,
+                   "Solteiro" => true);
 
 
 echo "<pre>";
@@ -83,5 +87,6 @@ echo "<pre>";
 print_r($listaPessoas);
 echo "</pre>";
 
-*/
+echo $listaPessoas[3][1];
+
 ?>
